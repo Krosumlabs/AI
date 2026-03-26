@@ -1,0 +1,101 @@
+Recap
+------ 
+AI
+
+ |->ML
+ |->DL
+ 
+ |->Gen AI 
+    |
+    |--> LLM 
+         ----
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ NLP
+ ----
+  |-> Corpus  -------- Paragraph 
+  |-> Documents -------- Sentence 
+  |-> words -- unique words 
+      |
+      | convert to vector
+      | -------------------
+    [ .... ]
+      |
+
+Learning ---> learn
+---------     -----
+
+good ---> good
+
+  |->stemming  - stem
+	|
+       eating -> eat
+       happy  -> happi // Not Good
+
+  |->lemmatization - lemma - POS
+	happy ->happy
+	eating ->eat
+	..
+
+  |-> Stop words 
+      -----------
+     the food is good // -> food good
+     ----------------       =========
+
+  |-> Convert to vector (numerical array)
+
+    OneHotEncoding
+    Bagofwords
+    IF-TF
+    word2vector
+     |
+    Transformer //
+
+   food good -> voc size is 2
+
+  food --> 1 0
+  good  -> 0 1 //Vectors
+
+
+ ram study book ai 
+ --------------------// 4 
+
+ram		1 0 0 0
+study		0 1 0 0
+book		0 0 1 0
+ai		0 0 0 1 
+		-----------//vectors
+
+[1000,
+ 0100,
+ 0010,
+ 0001]
+---------//vectors
+
+
+ram study book ai 
+
+n=1
+ram		1 0 0 0
+study		0 1 0 0
+book		0 0 1 0
+ai		0 0 0 1
+
+n=2
+ram study	1 0 0
+study book      0 1 0
+book ai1        0 0 1
+
+n=3
+ram study book  
+study book ai
+
+n=4
+ram study book ai --> 1
+
+n=5
+..
+n=N 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         
+ |->Agentic AI
